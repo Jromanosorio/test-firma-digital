@@ -114,3 +114,10 @@
     flex-direction: column;
   }
 }
+
+
+.sign{
+  border: 1px solid black;
+  width: 400px;
+  min-height: 200px;
+}
