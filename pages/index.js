@@ -15,7 +15,7 @@ export default function Home() {
     )
 
     console.log(
-      sign.current.getTrimmedCanvas().toDataURL("image/png")
+      sign.current.getTrimmedCanvas().toDataURL("image/png").split(',')[1]
     )
   }
 
