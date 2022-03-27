@@ -15,7 +15,7 @@ export default function Home() {
     )
 
     console.log(
-      sign.current.getTrimmedCanvas().toDataURL("image/png").split(',')[1]
+      sign.current.getTrimmedCanvas().toDataURL("image/png")
     )
   }
 
@@ -33,7 +33,9 @@ export default function Home() {
         <button onClick={saveSign}> Guardar </button>
 
         {imgURL ? <img src={imgURL} className={styles.sign} /> : null}
+        {imgURL ? <button> <a download={`firma.png`} href={imgURL}> Download </a> </button> : null}
         
+
       </main>
 
     </div>
